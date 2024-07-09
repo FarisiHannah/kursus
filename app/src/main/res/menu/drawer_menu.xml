@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/drawer_home"
+        android:icon="@drawable/baseline_home_filled_32"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/drawer_config"
+        android:icon="@drawable/baseline_build_24"
+        android:title="Configuration" >
+
+        <menu>
+            <item android:id="@+id/drawer_camera"
+                android:icon="@drawable/baseline_camera_alt_32"
+                android:title="Cammera"/>
+
+            <item android:title="Share"
+                android:id="@+id/drawer_share"
+                android:icon="@drawable/baseline_share_32"/>
+
+            <item android:icon="@drawable/baseline_send_32" android:id="@+id/drawer_send" android:title="Send"/>
+        </menu>
+    </item>
+</menu>

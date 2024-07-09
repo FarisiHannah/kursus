@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">First App</string>
+    <string name="search_activity">Search Activity</string>
+    <string name="maskotbutton">MaskotButton</string>
+    <string name="tekan_disini">Tekan Disini</string>
+    <string name="my_android">My Android</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>
