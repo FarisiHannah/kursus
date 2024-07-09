@@ -20,8 +20,7 @@ public class ShareFragment extends Fragment {
     }
 
     public static ShareFragment newInstance(String param1, String param2) {
-        ShareFragment fragment = new ShareFragment();
-        return fragment;
+        return new ShareFragment();
     }
 
     @Override

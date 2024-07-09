@@ -1,6 +1,5 @@
 package net.sf.firstapp;
 
-import android.graphics.Color;
 import android.os.Bundle;
 
 
