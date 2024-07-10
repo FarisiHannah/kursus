@@ -22,7 +22,6 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private Toolbar toolbar;
-    private Button btnIni;
     private NavigationView navView;
     private DrawerLayout drawerLayout;
     private Fragment fragmentHome;
@@ -115,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         //identify all widgets
         toolbar = findViewById(R.id.activity_main_toolbar);
-        btnIni = findViewById(R.id.btnIni);
+
         drawerLayout=findViewById(R.id.main) ;
         navView = findViewById(R.id.activity_navigation_view);
 
@@ -126,9 +125,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toolbar.setNavigationIcon(ContextCompat.getDrawable(this,R.drawable.icon_menu_32));
         toolbar.setOverflowIcon(ContextCompat.getDrawable(this,R.drawable.baseline_more_white_32));
         setSupportActionBar(toolbar);
-
-        //event handling untuk button
-        btnIni.setOnClickListener(view -> startActivity(new Intent(this,DisplayActivity.class)));
 
         //event handling untuk drawer layout
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open, R.string.close);

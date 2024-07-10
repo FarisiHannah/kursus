@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PersonActivity">
+    tools:context=".ProfileActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ad3bff"
+        android:background="#ff7b5a"
         android:orientation="vertical">
 
         <com.google.android.material.appbar.AppBarLayout
@@ -20,12 +19,10 @@
             android:gravity="start">
 
             <androidx.appcompat.widget.Toolbar
-                android:id="@+id/person_toolbar"
+                android:id="@+id/display_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:titleTextColor="@color/white"
-                android:background="@color/toolbarColor"
-                app:navigationIcon="@drawable/baseline_arrow_back_32">
+                android:background="#ff7b5a">
 
             </androidx.appcompat.widget.Toolbar>
 
@@ -37,24 +34,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabUsersLayout"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/toolbarColor"
-            app:tabGravity="fill"
-            app:tabIndicator="@android:color/holo_red_dark"
-            app:tabIndicatorAnimationMode="elastic"
-            app:tabIndicatorGravity="stretch"
-            app:tabMode="fixed"
-            app:tabSelectedTextColor="@color/white"
-            app:tabTextColor="@color/white" />
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewUsersPager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/display_activity"
+            android:textAlignment="center" />
     </LinearLayout>
 
 </LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottomnav_home"
+        android:icon="@drawable/baseline_home_filled_32"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/bottomnav_share"
+        android:icon="@drawable/baseline_share_32"
+        android:title="Share"/>
+
+    <item
+        android:id="@+id/bottomnav_camera" android:title="Camera" android:icon="@drawable/baseline_camera_alt_32" />
+
+</menu>
