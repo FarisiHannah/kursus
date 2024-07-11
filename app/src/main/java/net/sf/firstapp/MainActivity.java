@@ -8,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Button;
 
+import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,7 +39,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void startTransactionFragment(Fragment fragment){
         if(!fragment.isVisible())
         {
-            getSupportFragmentManager().beginTransaction().replace(R.id.activity_frame_layout,fragment).commit();
+            getSupportFragmentManager().beginTransaction()
+                    .setReorderingAllowed(true)
+                    .addToBackStack(null)
+                    .replace(R.id.activity_frame_layout,fragment).commit();
         }
     }
 
@@ -110,6 +114,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
         //identify all widgets
